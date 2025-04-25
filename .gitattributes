@@ -1,0 +1,12 @@
+# Forçar finais de linha LF para arquivos de código
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Tratar imagens como binárias
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Ignorar arquivos ao criar arquivos de distribuição
+*.md export-ignore
