@@ -1,12 +1,23 @@
-# Forçar finais de linha LF para arquivos de código
-*.js text eol=lf
-*.css text eol=lf
-*.html text eol=lf
+# Arquivos PHP tratados como texto com final de linha LF
+*.php text eol=lf
 
-# Tratar imagens como binárias
+# JSON tratado como texto
+*.json text eol=lf
+
+# Composer arquivos (evitar conversão de linha em binários)
+composer.phar binary
+
+# Imagens como binário
 *.png binary
 *.jpg binary
+*.jpeg binary
 *.gif binary
+*.ico binary
 
-# Ignorar arquivos ao criar arquivos de distribuição
-*.md export-ignore
+# Arquivos temporários e de backup ignorados em pacotes de exportação
+*.log export-ignore
+*.bak export-ignore
+*.tmp export-ignore
+
+# Ignorar a pasta gerada pelo XAMPP/phpMyAdmin ao exportar (opcional)
+localhost_* export-ignore
